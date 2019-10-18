@@ -15,6 +15,15 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ImageButton imageButton=findViewById(R.id.ibSettings);
+        androidx.appcompat.widget.SearchView searchView=findViewById(R.id.search_bar);
+
+        searchView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent=new Intent(MainActivity.this,MainActivity.class);
+                startActivity(intent);
+            }
+        });
 
         imageButton.setOnClickListener(new View.OnClickListener() {
             @Override
