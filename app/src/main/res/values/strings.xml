@@ -1,3 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- the below line code is for the name of the app -->
     <string name="app_name">tkt_dic_2</string>
+    <!-- in here all lines are just for each title of action bar -->
+    <string name="setting_title">Setting</string>
+    <string name="themes_title">Themes</string>
+    <string name="fonts_title">Fonts</string>
+    <string name="voice_title">Voice</string>
+    <string name="popupMenu_title">Popup Menu</string>
+    <string name="update_title">Update</string>
+    <string name="about_title">About</string>
+    <string name="exit_title">Exit</string>
+
 </resources>

@@ -3,22 +3,25 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:padding="8dp">
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="24dp">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:paddingTop="6dp"
         android:id="@+id/ivIcon"
-        android:src="@mipmap/ic_launcher"/>
-    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/tvTitle"
-        android:layout_weight="1"
-        android:textSize="23sp"
-        android:layout_gravity="center"
-        android:paddingLeft="16dp"
-        android:text="Themes"/>
+        android:paddingTop="8dp"
+        android:src="@mipmap/ic_launcher" />
 
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:paddingLeft="16dp"
+        android:text="Themes"
+        android:textSize="24sp" />
 </LinearLayout>
+

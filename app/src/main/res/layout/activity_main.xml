@@ -4,83 +4,101 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/BackgroundColor"
     tools:context=".MainActivity">
 
 
     <androidx.appcompat.widget.SearchView
-        android:id="@+id/search_bar"
-        android:layout_width="287dp"
-        android:layout_height="49dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginLeft="24dp"
+        android:id="@+id/searchBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginRight="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
         android:background="@drawable/search_background"
-        android:focusable="true"
+        app:closeIcon="@null"
+        app:defaultQueryHint="Type or Past The Word..."
+        app:textColorHint="?attr/textColorHint"
+        app:iconifiedByDefault="false"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.484"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:searchIcon="@drawable/ic_search" />
 
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardView2"
-        android:layout_width="287dp"
-        android:layout_height="140dp"
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardBackgroundColor="?attr/CardBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/search_bar">
+        app:layout_constraintTop_toBottomOf="@+id/searchBar">
 
         <TextView
-            android:id="@+id/textView2"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/cardstroke"
+            android:background="@drawable/stroke_card"
             android:drawableRight="@drawable/af_pic"
-            android:paddingRight="15dp"
+            android:paddingRight="8dp"
+            android:textColor="?attr/TextColor"
             android:text="  دری :"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/textView3"
+            android:id="@+id/tvMeaning_dari"
             android:layout_width="match_parent"
-            android:layout_height="96dp"
+            android:layout_height="101dp"
             android:layout_marginTop="38dp"
-            android:background="@drawable/cardstroke" />
+            android:background="@drawable/stroke_card"
+            android:textColor="?attr/TextColor"
+            android:paddingRight="15dp"
+            android:textSize="24sp" />
 
 
     </androidx.cardview.widget.CardView>
 
 
     <androidx.cardview.widget.CardView
-        android:layout_width="287dp"
-        android:layout_height="140dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        app:cardElevation="0dp"
+        app:cardBackgroundColor="?attr/CardBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.515"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
 
         <TextView
-            android:id="@+id/textView4"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="@drawable/cardstroke"
-            android:drawableLeft="@drawable/eng_pic"
+            android:background="@drawable/stroke_card"
+            android:drawableLeft="@drawable/ame_pic"
             android:paddingLeft="15dp"
+            android:textColor="?attr/TextColor"
             android:text="  English :"
             android:textSize="24sp" />
 
         <TextView
-            android:id="@+id/textView5"
+            android:id="@+id/tvMeaning"
             android:layout_width="match_parent"
-            android:layout_height="96dp"
+            android:layout_height="102dp"
             android:layout_marginTop="38dp"
-            android:background="@drawable/cardstroke" />
+            android:textColor="?attr/TextColor"
+            android:background="@drawable/stroke_card"/>
     </androidx.cardview.widget.CardView>
+
+
 
     <ImageButton
         android:id="@+id/ibVolume"

@@ -9,9 +9,41 @@
         android:roundIcon="@mipmap/splash_screen_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Setting">
+        <activity
+            android:name=".Exit"
+            android:label="@string/exit_title"
+            android:parentActivityName=".Setting"/>
+        <activity
+            android:name=".About"
+            android:label="@string/about_title"
+            android:parentActivityName=".Setting" />
+        <activity
+            android:name=".Update"
+            android:label="@string/update_title"
+            android:parentActivityName=".Setting"/>
+        <activity
+            android:name=".PopupMenu"
+            android:label="@string/popupMenu_title"
+            android:parentActivityName=".Setting"/>
+        <activity
+            android:name=".Voice"
+            android:label="@string/voice_title"
+            android:parentActivityName=".Setting"/>
+        <activity
+            android:name=".Fonts"
+            android:label="@string/fonts_title"
+            android:parentActivityName=".Setting"/>
+        <activity
+            android:name=".themes"
+            android:label="@string/themes_title"
+            android:parentActivityName=".Setting" />
 
-        </activity>
+        <activity
+            android:name=".Setting"
+            android:label="@string/setting_title"
+            android:parentActivityName=".MainActivity" />
+        <!-- the second line code is for the title name of action bar-->
+        <!-- the third line code shows the back button on the action bar-->
         <activity
             android:name=".splash_screen"
             android:theme="@style/Theme.AppCompat.Light.NoActionBar">
@@ -21,10 +53,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".MainActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"></activity>
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" /> <!-- this line code do not show the action bar -->
     </application>
 
 </manifest>
