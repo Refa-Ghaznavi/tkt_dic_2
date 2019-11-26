@@ -2,12 +2,10 @@ package com.example.tkt_dic_2;
 
 import android.content.Context;
 import android.content.Intent;
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.PopupMenu;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -53,30 +51,28 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.MyViewHolder> 
             public void onClick(View v) {
 
                 if (position==0){
-                    Intent intent = new Intent(context, themes.class);
-                    context.startActivity(intent);
-                }
-                else if (position==1){
                     Intent intent = new Intent(context, Fonts.class);
                     context.startActivity(intent);
                 }
-                else if (position==2){
+                else if (position==1){
                     Intent intent = new Intent(context, Voice.class);
+                    context.startActivity(intent);
+                }
+                else if (position==2){
+                    Intent intent = new Intent(context, NightMode.class);
                     context.startActivity(intent);
                 }
                 else if (position==3){
                     Intent intent = new Intent(context, PopupMenu.class);
                     context.startActivity(intent);
                 }
-                else if (position==4){
-                    Intent intent = new Intent(context,Update.class);
+                else if (position ==4) {
+                    Intent intent = new Intent(context,About.class);
                     context.startActivity(intent);
                 }
-                else if (position == 5) {
-                    Intent intent = new Intent(context,About.class);
-                }
-                else if (position == 6) {
+                else if (position ==5) {
                     Intent intent = new Intent(context,Exit.class);
+                    context.startActivity(intent);
                 }
                 else {
                     Toast.makeText(context, "No Match", Toast.LENGTH_SHORT).show();
