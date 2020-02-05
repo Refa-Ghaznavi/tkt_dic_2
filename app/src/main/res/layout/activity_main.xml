@@ -7,7 +7,6 @@
     android:background="?attr/BackgroundColor"
     tools:context=".MainActivity">
 
-
     <androidx.appcompat.widget.SearchView
         android:id="@+id/searchBar"
         android:layout_width="match_parent"
@@ -29,6 +28,7 @@
         app:searchIcon="@drawable/ic_search" />
 
 
+
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView"
         android:layout_width="match_parent"
@@ -36,6 +36,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
+        app:cardElevation="0dp"
         app:cardBackgroundColor="?attr/CardBackground"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.515"
@@ -97,6 +98,7 @@
             android:textColor="?attr/TextColor"
             android:background="@drawable/stroke_card"/>
     </androidx.cardview.widget.CardView>
+
 
 
 

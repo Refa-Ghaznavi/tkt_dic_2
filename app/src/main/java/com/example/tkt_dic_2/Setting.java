@@ -14,6 +14,8 @@ import android.widget.ImageButton;
 public class Setting extends AppCompatActivity{
 
 
+
+
     int[] itemImage={R.drawable.ic_2_alpha,R.drawable.ic_3_voice,R.drawable.ic_1_airplay,R.drawable.ic_4_find,R.drawable.ic_6_account,R.drawable.ic_7_exit};
     String[] itemName={"Fonts","Voice","Night Mode","Popup Menu","About","Exit"};
     @Override

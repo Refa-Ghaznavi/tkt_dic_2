@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     TextView tvMeaningsDaris;
     String searchedText;
     TextToSpeech textToSpeech;
+
     //String search;
 
 
@@ -171,6 +172,8 @@ public class MainActivity extends AppCompatActivity {
                 textToSpeech.speak(search,TextToSpeech.QUEUE_FLUSH,null);
             }
         });
+
+
 
     }
 

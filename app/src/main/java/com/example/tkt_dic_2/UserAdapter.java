@@ -71,15 +71,15 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.MyViewHolder> 
                     context.startActivity(intent);
                 }
                 else if (position ==5) {
-                    Intent intent = new Intent(context,Exit.class);
-                    context.startActivity(intent);
+//                    Intent intent = new Intent(context,Exit.class);
+//                    context.startActivity(intent);
+                      System.exit(0);
                 }
                 else {
                     Toast.makeText(context, "No Match", Toast.LENGTH_SHORT).show();
                 }
             }
         });
-
     }
 
     @Override
