@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "777846559179",
+    "firebase_url": "https://the-kabul-times-dict.firebaseio.com",
+    "project_id": "the-kabul-times-dict",
+    "storage_bucket": "the-kabul-times-dict.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:777846559179:android:fd40b5e8dbb400aeee264e",
+        "android_client_info": {
+          "package_name": "com.example.tkt_dic_2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "777846559179-6ct8bqcism4ttm5rptija1j13fijbsul.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tkt_dic_2",
+            "certificate_hash": "1c912446f071389c082886e5c9c0ea0d136e7a3f"
+          }
+        },
+        {
+          "client_id": "777846559179-j76feolve1rm35qr1qgc0a38nkppbm7q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBszNCOkTOuq45zr2-eKd4y4vHxswbzw8Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "777846559179-j76feolve1rm35qr1qgc0a38nkppbm7q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
